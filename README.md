@@ -9,8 +9,7 @@
 `git config --list`    
 
 ## Criando um repositório
-Navegar até a pasta do projeto  
-`git init`    
+Navegar até a pasta do projeto e digitar o seguinte comando `git init`      
 
 ## Adicionando Arquivos e Commitando 
 `git add .`      
@@ -54,10 +53,10 @@ git reset HEAD~1 --soft Exclui o ultimo commit e volta o arquivo para ser novame
 git reset HEAD~1 --hard Exclui o commit, os arquivos e as suas alterações    
 
 ## Branchs
-git branch nomedobranch (Criar um novo branch)  
-git checkout branch (Acessar o branch)  
-git checkout -b nomedobranch  (Criar um novo branch, apartir do branch atual)  
-git branch -d nomedobranch (Deletar um branch)
+Criar um novo Branch `git branch nomedobranch`  
+Acessar o branch `git checkout branch`    
+Criar um branch apartir do branch atual `git checkout -b nomedobranch`    
+Deletar o branch `git branch -d nomedobranch (Deletar um branch)`  
 
 ## Versionamento Semantico
 Forma organizada de gerar versões do software  

@@ -12,10 +12,11 @@ git config --list
 Navegar até a pasta do projeto  
 git init  
 
-### Fluxo de commits 
-git add .  $ git commit -m "Mensagem
-ou 
-git commit -a -m "Descrição Commit"
+### Adicionando Arquivos e Commitando 
+git add .    
+git commit -m "Mensagem  
+ou   
+git commit -a -m "Descrição Commit"  
 
 ### Verificando todos os hashs de commit 
 git log

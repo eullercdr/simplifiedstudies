@@ -1,55 +1,55 @@
 # Comandos GIT
 
 ### Configurações Iniciais GIT
-git config --global color.uit true
-git config --global user.name "John Doe"
-git config --global user.email johndoe@example.com
+git config --global color.uit true  
+git config --global user.name "John Doe"  
+git config --global user.email johndoe@example.com  
 
-- Verificando configurações
-git config --list
+### Verificando configurações
+git config --list  
 
-- Criando um repositório
-Navegar até a pasta do projeto
-git init
+### Criando um repositório
+Navegar até a pasta do projeto  
+git init  
 
-- Fluxo de commits 
+### Fluxo de commits 
 git add .  $ git commit -m "Mensagem
 ou 
 git commit -a -m "Descrição Commit"
 
-Verificando todos os hashs de commit 
+### Verificando todos os hashs de commit 
 git log
 
 Verificando todos os commits e alterações
 git log -p 
 
-Verificando as estaticas das mudanças
+### Verificando as estaticas das mudanças
 git log -stat
 git log --pretty=oneline
 git log --pretty=format:"%h - %an, %ar : %s" (%h hash, %an usuário, %ar tempo, %s descrição do commit)
 
-Commits a x days atras
+### Commits a x days atras
 git log --since=2.days
 
-Ignorando arquivos no git
+### Ignorando arquivos no git
 touch .gitignore edite o arquivo, colocando em cada linha a pasta ou arquivo a ser ignorado, o arquivo .gitignore deve ser commitado, pois 
 o git faz controle de seus proprios arquivos
 
-Resolvendo problemas de .gitignore
+### Resolvendo problemas de .gitignore
 git rm -r --cached . 
 git add .
 git commit -am "Remove ignored files"
 
-Voltando o arquivo para versão anterior untracked files
+### Voltando o arquivo para versão anterior untracked files
 git reset HEAD nome ou caminho do arquivo
 
-Voltar commits
-git checkout hash (hash do commit)
-git reset HEAD~1 --soft Exclui o ultimo commit e volta o arquivo para ser novamente comitado
-git reset HEAD~1 --hard Exclui o commit, os arquivos e as suas alterações
+### Fluxo de Commits
+git checkout hash (hash do commit)  
+git reset HEAD~1 --soft Exclui o ultimo commit e volta o arquivo para ser novamente comitado  
+git reset HEAD~1 --hard Exclui o commit, os arquivos e as suas alterações  
 
-Criando um branch
-git checkout -b nomedobranch
+### Criando um branch
+git checkout -b nomedobranch  
 
 Removendo um branch 
 git branch -d nomedobranch

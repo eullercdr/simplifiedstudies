@@ -38,7 +38,7 @@ o git faz controle de seus proprios arquivos
 ### Resolvendo problemas de .gitignore
 git rm -r --cached .   
 git add .  
-git commit -am "Remove ignored files"  
+git commit -a -m "Remove ignored files"  
 
 ### Voltando o arquivo para versão anterior untracked files
 git reset HEAD nome ou caminho do arquivo
@@ -62,24 +62,18 @@ Minor alterada pode quebrar a compatibilidade, mas mantém não pode quebrar tot
 a versão MAJOR exemplo 1.1.2 para 1.2.0  
 Patch SEMPRE Mantém Compatibilidade, 1.1.1 para 1.1.2, 1.1.3  
 
-Regra de Ouro  
+### Versionamento Semantico - Regra de Ouro  
 Mudou apenas patch, atualize sem maiores cuidados  
-Mudou minor, faça os testes e leia a documentação para verificar a compatibilidade  
-Mudou Major, cuidado, refazer seu software, pode ser algo trabalhoso, mudança em tudo, estrutura, novas formas de escrita de uma funcionalidade  
-
+Mudou minor, faça os testes e leia a documentação para verificar a compatibilidade, algumas coisas podem não ser mais compativéis 
+Mudou Major, cuidado, pode ser algo trabalhoso, a mudança pode ser drástica, estrutura, novas formas de escrita de uma funcionalidades.  
 Mudanças de Patch devem manter a compatibilidade, exemplo 0.0.Patch, 0.0.1 para 0.0.2, deve ser respeitada a compatibilidade
-Exemplo major version alterada, exemplo 1.0.0 para 2.0.0, compatibilidade não precisa ser mantida
-
-Version 1 - Versão Principal
-Version 1.1.8 Versão Principal com compatibilidade mantida
-Version 1.2.1 Pode quebrar a compatibilidade, mas não pode quebrar de forma geral
-Version 2.0 Pode quebrar totalmente a compatibilidade
+Mudança de Major version alterada, exemplo 1.0.0 para 2.0.0, compatibilidade não precisa ser mantida      
 
 ### Visualizando repositorios locais e remotos
 git branch -a
 
 ### Removendo uma tag remota
-git push --delete origin tagname
+git push --delete origin tagname  
 
 ### Removendo uma tag local
-git tag --delete tagname
+git tag --delete tagname  

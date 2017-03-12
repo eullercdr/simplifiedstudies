@@ -24,9 +24,9 @@ Verificando todos os commits e alterações
 git log -p 
 
 ### Verificando as estaticas das mudanças
-git log -stat
-git log --pretty=oneline
-git log --pretty=format:"%h - %an, %ar : %s" (%h hash, %an usuário, %ar tempo, %s descrição do commit)
+git log -stat  
+git log --pretty=oneline  
+git log --pretty=format:"%h - %an, %ar : %s" (%h hash, %an usuário, %ar tempo, %s descrição do commit)  
 
 ### Commits a x days atras
 git log --since=2.days
@@ -77,3 +77,26 @@ git push --delete origin tagname
 
 ### Removendo uma tag local
 git tag --delete tagname  
+
+## Repositorio Bare e Hook
+
+Partindo do princípio que o seu site vai rodar em um servidor que você possui acesso SSH facilitado, 
+vamos criar o repositório lá que será uma cópia do servidor local:  
+
+$ mkdir website.git && cd website.git  
+$ git init --bare  
+Initialized empty Git repository in /home/user/website.git/  
+
+Agora vamos começar a criar o git-hook que será responsável por copiar todos os arquivos - do repositório bare - 
+para a pasta onde o site vai rodar, no ambiente de produção:  
+
+cat > hooks/post-receive  
+#!/bin/sh  
+GIT_WORK_TREE=/var/www/meusite.com.br  
+export GIT_WORK_TREE  
+git checkout -f
+chmod +x hooks/post-receive  
+
+Agora é só voltar para a sua máquina e adicionar o repositório remoto:  
+git remote add web ssh://meusite.com.br/home/site/website.git  
+git push web +master:refs/heads/master  

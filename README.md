@@ -36,9 +36,9 @@ touch .gitignore edite o arquivo, colocando em cada linha a pasta ou arquivo a s
 o git faz controle de seus proprios arquivos
 
 ### Resolvendo problemas de .gitignore
-git rm -r --cached . 
-git add .
-git commit -am "Remove ignored files"
+git rm -r --cached .   
+git add .  
+git commit -am "Remove ignored files"  
 
 ### Voltando o arquivo para versão anterior untracked files
 git reset HEAD nome ou caminho do arquivo

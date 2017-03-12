@@ -19,21 +19,21 @@ ou
 `git commit -a -m "Descrição Commit"`    
 
 ## Verificando todos os hashs de commit 
-git log
+`git log`  
 
 Verificando todos os commits e alterações
-git log -p 
+`git log -p`   
 
 ## Verificando as estaticas das mudanças
-git log -stat  
-git log --pretty=oneline  
-git log --pretty=format:"%h - %an, %ar : %s" (%h hash, %an usuário, %ar tempo, %s descrição do commit)  
+`git log -stat`    
+`git log --pretty=oneline`    
+`git log --pretty=format:"%h - %an, %ar : %s"` (%h hash, %an usuário, %ar tempo, %s descrição do commit)    
 
 ## Commits a x days atras
-git log --since=2.days
+`git log --since=2.days`  
 
 ## Ignorando arquivos no git
-touch .gitignore  
+`touch .gitignore`    
 edite o arquivo, colocando em cada linha a pasta ou arquivo a ser ignorado, o arquivo .gitignore deve ser commitado, pois 
 o git faz controle de seus proprios arquivos  
 

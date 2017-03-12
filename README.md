@@ -6,17 +6,17 @@
 `git config --global user.email seuemail@provedor.com.br`    
 
 ## Verificando configurações
-git config --list  
+`git config --list`    
 
 ## Criando um repositório
 Navegar até a pasta do projeto  
-git init  
+`git init`    
 
 ## Adicionando Arquivos e Commitando 
-git add .    
-git commit -m "Mensagem  
+`git add .`      
+`git commit -m "Mensagem`    
 ou   
-git commit -a -m "Descrição Commit"  
+`git commit -a -m "Descrição Commit"`    
 
 ## Verificando todos os hashs de commit 
 git log

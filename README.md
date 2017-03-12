@@ -1,9 +1,9 @@
 # Comandos GIT
 
 ## Configurações Iniciais GIT
-`git config --global color.uit true   
+`git config --global color.uit true`<br>   
 git config --global user.name "Nome Sobrenome"    
-git config --global user.email seuemail@provedor.com.br`  
+git config --global user.email seuemail@provedor.com.br  
 
 ## Verificando configurações
 git config --list  

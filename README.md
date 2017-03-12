@@ -93,12 +93,12 @@ Agora vamos começar a criar o git-hook que será responsável por copiar todos 
 para a pasta onde o site vai rodar, no ambiente de produção:  
 
 cat > hooks/post-receive  
-Digite #!/bin/sh  
-GIT_WORK_TREE=/var/www/meusite.com.br  
-export GIT_WORK_TREE  
-git checkout -f
-chmod +x hooks/post-receive  
+`#!/bin/sh    
+GIT_WORK_TREE=/var/www/meusite.com.br    
+export GIT_WORK_TREE    
+git checkout -f  
+chmod +x hooks/post-receive`    
 
 Agora é só voltar para a sua máquina e adicionar o repositório remoto:  
-git remote add web ssh://meusite.com.br/home/site/website.git  
-git push web +master:refs/heads/master  
+`git remote add web ssh://meusite.com.br/home/site/website.git`    
+`git push web master`    

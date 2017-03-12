@@ -75,27 +75,25 @@ Mudanças de Patch devem manter a compatibilidade, exemplo 0.0.Patch, 0.0.1 para
 Mudança de Major version alterada, exemplo 1.0.0 para 2.0.0, compatibilidade não precisa ser mantida, pode ser mudar toda a estrutura do código        
 
 ## Visualizando repositorios locais e remotos
-git branch -a
+`git branch -a`  
 
-## Removendo uma tag remota
-git push --delete origin tagname  
-
-## Removendo uma tag local
-git tag --delete tagname  
+## Tags
+`git tag versao`  
+`git push --delete origin tagname` Removendo uma tag remota       
+`git tag --delete tagname` Removendo uma tag local      
 
 ## Repositorio Bare e Hook
 
 Partindo do princípio que o seu site vai rodar em um servidor que você possui acesso SSH facilitado, 
 vamos criar o repositório lá que será uma cópia do servidor local:  
 
-$ mkdir website.git && cd website.git  
-$ git init --bare  
-Initialized empty Git repository in /home/user/website.git/  
+`mkdir website.git && cd website.git`    
+`git init --bare`      
 
 Agora vamos começar a criar o git-hook que será responsável por copiar todos os arquivos - do repositório bare - 
 para a pasta onde o site vai rodar, no ambiente de produção:  
 
-cat > hooks/post-receive  
+`cat > hooks/post-receive`    
 `#!/bin/sh`      
 `GIT_WORK_TREE=/var/www/meusite.com.br`      
 `export GIT_WORK_TREE`      

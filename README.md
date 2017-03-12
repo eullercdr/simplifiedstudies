@@ -54,7 +54,7 @@ chmod -R 777 = Todos os arquivos e subpastas terão a permissão
 
 Cuidado com permissões CHMOD 777 - Ultimo 7, deixa até o usuário anonimo ler executar e escrever no arquivo (MUITO SÉRIO)  
 
-### INSTALANDO PACOTES
+### Instalando Pacotes
 
 su - = logar como root  
 PHP, Apache e Mysql  
@@ -68,7 +68,8 @@ sudo vim /etc/apache2/apache2.conf
 e adiciona no final do arquivo:  
 Include /etc/phpmyadmin/apache.conf  
 
-### Install PHPStorm
+### Instalando PHPStorm
+
 sudo apt-get purge openjdk*  
 sudo add-apt-repository ppa:webupd8team/java  
 sudo apt-get update  
@@ -79,7 +80,11 @@ tar -xvf PhpStorm-10.0.2.tar.gz
 cd PhpStorm-143.1184.87/bin/  
 ./phpstorm.sh  
 
-### Resolvendo issue IBUS PHPSTORM http://serverfault.com/questions/735189/ibus-1-5-11-on-ubuntu/735381#735381
+### Resolvendo issue IBUS PHPSTORM 
+
+http://serverfault.com/questions/735189/ibus-1-5-11-on-ubuntu/735381#735381
+
+### Comandos Mysql/Apache
 
 Acessar mysql via terminal  
 mysql -h localhost -u root -p  

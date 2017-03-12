@@ -91,7 +91,7 @@ Agora vamos começar a criar o git-hook que será responsável por copiar todos 
 para a pasta onde o site vai rodar, no ambiente de produção:  
 
 cat > hooks/post-receive  
-#!/bin/sh  
+Digite #!/bin/sh  
 GIT_WORK_TREE=/var/www/meusite.com.br  
 export GIT_WORK_TREE  
 git checkout -f

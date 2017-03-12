@@ -2,8 +2,8 @@
 
 ### Configurações Iniciais GIT
 git config --global color.uit true  
-git config --global user.name "John Doe"  
-git config --global user.email johndoe@example.com  
+git config --global user.name "Nome Sobrenome"  
+git config --global user.email seuemail@provedor.com.br
 
 ### Verificando configurações
 git config --list  
@@ -45,8 +45,8 @@ git reset HEAD nome ou caminho do arquivo
 
 ### Fluxo de Commits
 git checkout hash (hash do commit)  
-git reset HEAD~1 --soft Exclui o ultimo commit e volta o arquivo para ser novamente comitado  
-git reset HEAD~1 --hard Exclui o commit, os arquivos e as suas alterações  
+git reset HEAD~1 --soft Exclui o ultimo commit e volta o arquivo para ser novamente comitado    
+git reset HEAD~1 --hard Exclui o commit, os arquivos e as suas alterações    
 
 ### Criando um branch
 git checkout -b nomedobranch  

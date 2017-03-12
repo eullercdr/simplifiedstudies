@@ -1,4 +1,6 @@
-# Estrutura de pastas linux
+# Comandos Linux
+
+### Estrutura de pastas linux
 
 /home = pasta de usuarios  
 /dev = devices  
@@ -11,7 +13,7 @@
 /user/bin=executaveis  
 /lib=bibliotecas  
 
-# Comandos Básicos
+### Comandos Básicos
 
 mkdir = criar diretorio  
 touch = criar arquivo  
@@ -33,13 +35,13 @@ top = tempo real de tudo que está acontecendo na máquina
 whoami = mostra o usuário logado  
 d=diretorio , a = arquivo, s=socket  
 
-# Permissões de Arquivo
+### Permissões de Arquivo
 
 USUARIO  |GRUPO  | OUTROS (USUARIO ANONIMO)  
 rwx        rwx     rwx  
 r=read w=write x=execute  
 
-# Permissões CHMOD
+### Permissões CHMOD
 
 chmod u+x arquivo.txt - Adicionar permissão de usuario para executar  
 chmod g+r arquivo.txt - Adicionar permissão de leitura para o grupo  
@@ -48,6 +50,40 @@ Para retirar uma permissão basta usar o comando - (menos)
 chmod 644 = UGO  
 chmod -R 777 = Todos os arquivos e subpastas terão a permissão  
 
-# Atenção 
+### Atenção 
 
 Cuidado com permissões CHMOD 777 - Ultimo 7, deixa até o usuário anonimo ler executar e escrever no arquivo (MUITO SÉRIO)  
+
+### INSTALANDO PACOTES
+
+su - = logar como root  
+PHP, Apache e Mysql  
+php -i | grep pdo  
+sudo apt-get install php5  
+sudo apt-get install apache2  
+sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql  
+sudo apt-get install php5-mysql  
+sudo apt-get install phpmyadmin  
+sudo vim /etc/apache2/apache2.conf  
+e adiciona no final do arquivo:  
+Include /etc/phpmyadmin/apache.conf  
+
+### Install PHPStorm
+sudo apt-get purge openjdk*  
+sudo add-apt-repository ppa:webupd8team/java  
+sudo apt-get update  
+sudo apt-get install oracle-java7-installer  
+sudo apt-get install oracle-java7-set-default  
+wget http://download-cf.jetbrains.com/webide/PhpStorm-10.0.2.tar.gz  
+tar -xvf PhpStorm-10.0.2.tar.gz  
+cd PhpStorm-143.1184.87/bin/  
+./phpstorm.sh  
+
+### Resolvendo issue IBUS PHPSTORM http://serverfault.com/questions/735189/ibus-1-5-11-on-ubuntu/735381#735381
+
+Acessar mysql via terminal  
+mysql -h localhost -u root -p  
+Reiniciar/Parar/Iniciar o apache  
+sudo service apache2 restart  
+sudo service apache2 stop  
+sudo service apache2 start  

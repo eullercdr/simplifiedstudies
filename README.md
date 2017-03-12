@@ -44,21 +44,10 @@ r=read w=write x=execute
 chmod u+x arquivo.txt - Adicionar permissão de usuario para executar  
 chmod g+r arquivo.txt - Adicionar permissão de leitura para o grupo  
 chmod g=rwx arquivo.txt  
-Para retirar uma permissão basta usar o comando - (menos)  
-
-Permissão |  Binário | Decimal  
----           000         0  
---x           001         1  
--w-           010         2  
--wx           011         3  
-r--           100         4  
-r-x           101         5  
-rw-           110         6  
-rwx           111         7   
-                          
+Para retirar uma permissão basta usar o comando - (menos)                       
 chmod 644 = UGO  
 chmod -R 777 = Todos os arquivos e subpastas terão a permissão  
 
-Mudar o dono de um arquivo  
+# Atenção 
 
-Cuidado com 777 - Ultimo 7, deixa até o usuário anonimo ler executar e escrever no arquivo (MUITO SÉRIO)  
+Cuidado com permissões CHMOD 777 - Ultimo 7, deixa até o usuário anonimo ler executar e escrever no arquivo (MUITO SÉRIO)  

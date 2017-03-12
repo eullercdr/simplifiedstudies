@@ -66,10 +66,10 @@ Patch SEMPRE Mantém Compatibilidade, 1.1.1 para 1.1.2, 1.1.3
 
 ### Versionamento Semantico - Regra de Ouro  
 Mudou apenas patch, atualize sem maiores cuidados  
-Mudou minor, faça os testes e leia a documentação para verificar a compatibilidade, algumas coisas podem não ser mais compativéis 
-Mudou Major, cuidado, pode ser algo trabalhoso, a mudança pode ser drástica, estrutura, novas formas de escrita de uma funcionalidades.  
-Mudanças de Patch devem manter a compatibilidade, exemplo 0.0.Patch, 0.0.1 para 0.0.2, deve ser respeitada a compatibilidade
-Mudança de Major version alterada, exemplo 1.0.0 para 2.0.0, compatibilidade não precisa ser mantida      
+Mudou minor, faça os testes e leia a documentação para verificar a compatibilidade, algumas coisas podem não ser mais compativéis   
+Mudou Major, cuidado, pode ser algo trabalhoso, a mudança pode ser drástica, estrutura, novas formas de escrita de uma funcionalidades. 
+Mudanças de Patch devem manter a compatibilidade, exemplo 0.0.Patch, 0.0.1 para 0.0.2, deve ser respeitada a compatibilidade  
+Mudança de Major version alterada, exemplo 1.0.0 para 2.0.0, compatibilidade não precisa ser mantida, pode ser mudar toda a estrutura do código        
 
 ### Visualizando repositorios locais e remotos
 git branch -a

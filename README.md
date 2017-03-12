@@ -1,9 +1,9 @@
 # Estrutura de pastas linux
 
-/home = pasta de usuarios\n
-/dev = devices\n
-/media = driver de cd\n
-/root = estrutura de pasta do root/superusuario\n
+/home = pasta de usuarios/n
+/dev = devices
+/media = driver de cd
+/root = estrutura de pasta do root/superusuario
 /tmp = logs etc
 /etc=arquivos de configuracao
 /var=conteudo de arquivos logs, mysql

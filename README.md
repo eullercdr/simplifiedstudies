@@ -48,11 +48,11 @@ git checkout hash (hash do commit)
 git reset HEAD~1 --soft Exclui o ultimo commit e volta o arquivo para ser novamente comitado    
 git reset HEAD~1 --hard Exclui o commit, os arquivos e as suas alterações    
 
-### Criando um branch
-git checkout -b nomedobranch  
-
-Removendo um branch 
-git branch -d nomedobranch
+### Branchs
+git branch nomedobranch (Criar um novo branch)  
+git checkout -b nomedobranch  (Criar um novo branch, apartir do branch atual)  
+git branch -d nomedobranch (Deletar um branch)
+git checkout branch (Acessa o branch)  
 
 ### Versionamento Semantico
 Forma organizada de gerar versões do software  

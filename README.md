@@ -48,9 +48,9 @@ enfrentam e pode ser resolvido pelos comandos abaixo
 git reset HEAD nome ou caminho do arquivo
 
 ## Fluxo de Commits
-git checkout hash (hash do commit)  
-git reset HEAD~1 --soft Exclui o ultimo commit e volta o arquivo para ser novamente comitado    
-git reset HEAD~1 --hard Exclui o commit, os arquivos e as suas alterações    
+`git checkout hash` (hash do commit)      
+`git reset HEAD~1 --soft` Exclui o ultimo commit e volta o arquivo para ser novamente comitado      
+`git reset HEAD~1 --hard` Exclui o commit, os arquivos e as suas alterações      
 
 ## Branchs
 Criar um novo Branch `git branch nomedobranch`  

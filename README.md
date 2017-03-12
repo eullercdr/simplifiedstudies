@@ -54,19 +54,18 @@ git checkout -b nomedobranch
 Removendo um branch 
 git branch -d nomedobranch
 
-Versionamento Semantico
-Forma organizada de gerar versões do software
-x.x.x - Major, Minor, Patch
-Major alterada pode quebrar TOTALMENTE a compatibilidade exemplo 1.0.1 para 2.0.0
+### Versionamento Semantico
+Forma organizada de gerar versões do software  
+x.x.x - Major, Minor, Patch  
+Major alterada pode quebrar TOTALMENTE a compatibilidade exemplo 1.0.1 para 2.0.0  
 Minor alterada pode quebrar a compatibilidade, mas mantém não pode quebrar totalmente, deve ser ter um minimo de compatibilidade com 
-a versão MAJOR exemplo 1.1.2 para 1.2.0
-Patch SEMPRE Mantém Compatibilidade, 1.1.1 para 1.1.2, 1.1.3
+a versão MAJOR exemplo 1.1.2 para 1.2.0  
+Patch SEMPRE Mantém Compatibilidade, 1.1.1 para 1.1.2, 1.1.3  
 
-Regra de Ouro
-Mudou apenas patch, atualize sem maiores cuidados
-Mudou minor, faça os testes e leia a documentação para verificar a compatibilidade
-Mudou Major, cuidado, refazer seu software, pode ser algo trabalhoso, mudança em tudo, estrutura, novas formas de escrita de uma funcionalidade
-etc
+Regra de Ouro  
+Mudou apenas patch, atualize sem maiores cuidados  
+Mudou minor, faça os testes e leia a documentação para verificar a compatibilidade  
+Mudou Major, cuidado, refazer seu software, pode ser algo trabalhoso, mudança em tudo, estrutura, novas formas de escrita de uma funcionalidade  
 
 Mudanças de Patch devem manter a compatibilidade, exemplo 0.0.Patch, 0.0.1 para 0.0.2, deve ser respeitada a compatibilidade
 Exemplo major version alterada, exemplo 1.0.0 para 2.0.0, compatibilidade não precisa ser mantida
@@ -76,11 +75,11 @@ Version 1.1.8 Versão Principal com compatibilidade mantida
 Version 1.2.1 Pode quebrar a compatibilidade, mas não pode quebrar de forma geral
 Version 2.0 Pode quebrar totalmente a compatibilidade
 
-Visualizando repositorios locais e remotos
+### Visualizando repositorios locais e remotos
 git branch -a
 
-Removendo uma tag remota
+### Removendo uma tag remota
 git push --delete origin tagname
 
-Removendo uma tag local
+### Removendo uma tag local
 git tag --delete tagname

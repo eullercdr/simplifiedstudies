@@ -1,6 +1,6 @@
 # Comandos GIT
 
-- Configurações Iniciais GIT
+### Configurações Iniciais GIT
 git config --global color.uit true
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com

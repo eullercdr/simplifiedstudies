@@ -33,8 +33,9 @@ git log --pretty=format:"%h - %an, %ar : %s" (%h hash, %an usuário, %ar tempo, 
 git log --since=2.days
 
 ### Ignorando arquivos no git
-touch .gitignore edite o arquivo, colocando em cada linha a pasta ou arquivo a ser ignorado, o arquivo .gitignore deve ser commitado, pois 
-o git faz controle de seus proprios arquivos
+touch .gitignore  
+edite o arquivo, colocando em cada linha a pasta ou arquivo a ser ignorado, o arquivo .gitignore deve ser commitado, pois 
+o git faz controle de seus proprios arquivos  
 
 ### Resolvendo problemas de .gitignore
 git rm -r --cached .   

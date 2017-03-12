@@ -52,9 +52,9 @@ git reset HEAD~1 --hard Exclui o commit, os arquivos e as suas alterações
 
 ### Branchs
 git branch nomedobranch (Criar um novo branch)  
+git checkout branch (Acessar o branch)  
 git checkout -b nomedobranch  (Criar um novo branch, apartir do branch atual)  
 git branch -d nomedobranch (Deletar um branch)
-git checkout branch (Acessa o branch)  
 
 ### Versionamento Semantico
 Forma organizada de gerar versões do software  

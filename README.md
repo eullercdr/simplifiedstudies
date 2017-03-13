@@ -15,24 +15,24 @@
 
 ### Comandos Básicos
 
-mkdir = criar diretorio  
-touch = criar arquivo  
-ls -l = ver tipos de arquivo  
-touch .qualquernome = criação de arquivo oculto  
-ls -la = lista todos os arquivos, até ocultos  
-rm = remover arquivo   
-rm arquivo = remove um unico arquivo  
-rm -rf diretorio = remover um diretorio  
-rm -rf * = remove tudo dentro de um contexto  
-mv arquivo nomenovo = renomear arquivo  
-sudo chown euller diretorio= muda o dono do arquivo  
-find . -name arquivo = buscar um arquivo  
-find . -name "oi*" = buscar um arquivo  
-ls -la | grep oi = busca arquivos com um filtro  
-ln -s framework framework2 = cria um link simbolico de framework pra framework2  
-cat arquivo = exibe o conteudo de uma arquivo  
-top = tempo real de tudo que está acontecendo na máquina  
-whoami = mostra o usuário logado  
+`mkdir` = criar diretorio  
+`touch` = criar arquivo  
+`ls -l` = ver tipos de arquivo  
+`touch .qualquernome` = criação de arquivo oculto  
+`ls -la` = lista todos os arquivos, até ocultos  
+`rm` = remover arquivo   
+`rm arquivo`  = remove um unico arquivo  
+`rm -rf diretorio` = remover um diretorio  
+`rm -rf *` = remove tudo dentro de um contexto  
+`mv arquivo nomenovo` = renomear arquivo  
+`sudo chown euller diretorio`= muda o dono do arquivo  
+`find . -name arquivo` = buscar um arquivo  
+`find . -name "oi*"` = buscar um arquivo  
+`ls -la | grep oi` = busca arquivos com um filtro  
+`ln -s framework framework2` = cria um link simbolico de framework pra framework2  
+`cat arquivo` = exibe o conteudo de uma arquivo  
+`top` = tempo real de tudo que está acontecendo na máquina  
+`whoami` = mostra o usuário logado  
 d=diretorio , a = arquivo, s=socket  
 
 ### Permissões de Arquivo
@@ -43,12 +43,12 @@ r=read w=write x=execute
 
 ### Permissões CHMOD
 
-chmod u+x arquivo.txt - Adicionar permissão de usuario para executar  
-chmod g+r arquivo.txt - Adicionar permissão de leitura para o grupo  
-chmod g=rwx arquivo.txt  
+`chmod u+x arquivo.txt` - Adicionar permissão de usuario para executar  
+`chmod g+r arquivo.txt` - Adicionar permissão de leitura para o grupo  
+`chmod g=rwx arquivo.txt`  
 Para retirar uma permissão basta usar o comando - (menos)                       
-chmod 644 = UGO  
-chmod -R 777 = Todos os arquivos e subpastas terão a permissão  
+`chmod 644` = UGO  
+`chmod -R 777` = Todos os arquivos e subpastas terão a permissão  
 
 ### Atenção 
 

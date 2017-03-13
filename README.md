@@ -102,3 +102,42 @@ Reiniciar/Parar/Iniciar o apache
 sudo service apache2 restart  
 sudo service apache2 stop  
 sudo service apache2 start  
+
+### Instalando PHP 7 no Ubuntu
+Rode os comandos abaixo em sequencia. 
+```
+sudo apt-get install -y language-pack-en-base
+sudo LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php
+sudo apt-get update
+sudo apt-get install zip unzip
+sudo apt-get install -y php7.0 php7.0-fpm php7.0-mysql php7.0-zip php7.0-gd
+sudo apt-get install nginx git
+```
+
+Pacotes Importantes
+```
+sudo apt-get install mcrypt php7.0-mcrypt
+sudo apt-get install -y php7.0-mbstring php7.0-xml --force-yes
+```
+
+Pacotes Opcionais
+```
+sudo apt-get install php7.0-curl php7.0-json
+```
+
+**NOTE:** Você pode usar o comando abaixo para visualizar os pacotes disponiveis para o PHP 7.0: 
+```
+sudo apt-cache search php7-*
+```
+### Alterando a configuraçao do PHP.ini
+```
+sudo nano /etc/php/7.0/fpm/php.ini
+```
+Descomente e corrija `cgi.fix_pathinfo` para 
+```
+cgi.fix_pathinfo=0
+```
+Reinicie PHP 7.0 FPM 
+```
+sudo service php7.0-fpm restart
+```

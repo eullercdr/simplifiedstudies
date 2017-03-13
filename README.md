@@ -58,29 +58,30 @@ Cuidado com permissões CHMOD 777 - Ultimo 7, deixa até o usuário anonimo ler 
 
 #### Distribuições baseadas no debian (ubuntu, mint, etc)
 
-su - = logar como root  
-PHP, Apache e Mysql  
-php -i | grep pdo  
-sudo apt-get install php5  
-sudo apt-get install apache2  
-sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql  
-sudo apt-get install php5-mysql  
-sudo apt-get install phpmyadmin  
-sudo vim /etc/apache2/apache2.conf  
+`su` ou `sudo su` - = logar como root    
+
+### Instalando PHP, Apache e Mysql  
+`php -i | grep pdo`  
+`sudo apt-get install php5`  
+`sudo apt-get install apache2`  
+`sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql`  
+`sudo apt-get install php5-mysql`  
+`sudo apt-get install phpmyadmin`  
+`sudo vim /etc/apache2/apache2.conf`  
 e adiciona no final do arquivo:  
-Include /etc/phpmyadmin/apache.conf  
+`Include /etc/phpmyadmin/apache.conf`  
 
 ### Instalando PHPStorm
 
-sudo apt-get purge openjdk*  
-sudo add-apt-repository ppa:webupd8team/java  
-sudo apt-get update  
-sudo apt-get install oracle-java7-installer  
-sudo apt-get install oracle-java7-set-default  
-wget http://download-cf.jetbrains.com/webide/PhpStorm-10.0.2.tar.gz  
-tar -xvf PhpStorm-10.0.2.tar.gz  
-cd PhpStorm-143.1184.87/bin/  
-./phpstorm.sh  
+`sudo apt-get purge openjdk*`  
+`sudo add-apt-repository ppa:webupd8team/java`  
+`sudo apt-get update`  
+`sudo apt-get install oracle-java7-installer`  
+`sudo apt-get install oracle-java7-set-default`  
+`wget http://download-cf.jetbrains.com/webide/PhpStorm-10.0.2.tar.gz`  
+`tar -xvf PhpStorm-10.0.2.tar.gz`  
+`cd PhpStorm-143.1184.87/bin/ ` 
+`./phpstorm.sh`  
 
 #### Distribuições baseadas no Arch (antergos, manjaro, etc)
 

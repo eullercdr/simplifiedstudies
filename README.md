@@ -56,6 +56,8 @@ Cuidado com permissões CHMOD 777 - Ultimo 7, deixa até o usuário anonimo ler 
 
 ### Instalando Pacotes
 
+#### Distribuições baseadas no debian (ubuntu, mint, etc)
+
 su - = logar como root  
 PHP, Apache e Mysql  
 php -i | grep pdo  
@@ -79,6 +81,13 @@ wget http://download-cf.jetbrains.com/webide/PhpStorm-10.0.2.tar.gz
 tar -xvf PhpStorm-10.0.2.tar.gz  
 cd PhpStorm-143.1184.87/bin/  
 ./phpstorm.sh  
+
+#### Distribuições baseadas no Arch (antergos, manjaro, etc)
+
+yaourt {pacote} (pesquisar um pacote)  
+yaourt -S {pacote} (instalar um pacote diretamente)  
+yaourt -R {pacote} (remover um pacote)  
+yaourt -Syu (atualizar o sistema)
 
 ### Resolvendo issue IBUS PHPSTORM 
 

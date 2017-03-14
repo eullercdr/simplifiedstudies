@@ -23,9 +23,9 @@ SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too lo
 
 Edite o AppService Provider e adicione  
 
-`use Illuminate\Support\Facades\Schema;  
+use Illuminate\Support\Facades\Schema;  
 
 public function boot()  
 {  
     Schema::defaultStringLength(191);  
-}`    
+}   

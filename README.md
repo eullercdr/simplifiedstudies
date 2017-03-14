@@ -1,6 +1,6 @@
 # Dicas Laravel 
 
-### Usando o fork ao invés do Repositório de origem
+### Usando um fork pessoal, ao invés do repositório de origem
 
 Assumindo um patch para corrigir um bug em um package, exemplo monolog.  
 

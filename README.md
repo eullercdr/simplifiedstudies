@@ -58,6 +58,10 @@ Acessar o branch `git checkout branch`
 Criar um branch apartir do branch atual `git checkout -b nomedobranch`    
 Deletar o branch `git branch -d nomedobranch (Deletar um branch)`  
 
+### Clonar um branch especifico 
+
+`git clone -b <branch> <remote_repo>`  
+
 ## Versionamento Semantico
 Forma organizada de gerar versões do software  
 x.x.x - Major, Minor, Patch  

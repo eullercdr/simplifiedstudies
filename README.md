@@ -58,7 +58,17 @@ r=read w=write x=execute
 `chmod u+x arquivo.txt` - Adicionar permissão de usuario para executar  
 `chmod g+r arquivo.txt` - Adicionar permissão de leitura para o grupo  
 `chmod g=rwx arquivo.txt`  
-Para retirar uma permissão basta usar o comando - (menos)                       
+Para retirar uma permissão basta usar o comando - (menos)    
+
+0 - permissão negada  
+1 - permissão de execução  
+2 - permissão de gravação  
+3 - permissão de gravação e execução  
+4 - permissão de leitura  
+5 - permissão de leitura e execução  
+6 - permissão de leitura e gravação  
+7 - soma de todas as permissões  
+
 `chmod 644` = UGO  
 `chmod -R 777` = Todos os arquivos e subpastas terão a permissão  
 

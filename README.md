@@ -15,25 +15,37 @@
 
 ### Comandos Básicos
 
-`mkdir` = criar diretorio  
-`touch` = criar arquivo  
-`ls -l` = ver tipos de arquivo  
-`touch .qualquernome` = criação de arquivo oculto  
-`ls -la` = lista todos os arquivos, até ocultos  
-`rm` = remover arquivo   
-`rm arquivo`  = remove um unico arquivo  
-`rm -rf diretorio` = remover um diretorio  
-`rm -rf *` = remove tudo dentro de um contexto  
-`mv arquivo nomenovo` = renomear arquivo  
-`sudo chown euller diretorio`= muda o dono do arquivo  
-`find . -name arquivo` = buscar um arquivo  
-`find . -name "oi*"` = buscar um arquivo  
-`ls -la | grep oi` = busca arquivos com um filtro  
-`ln -s framework framework2` = cria um link simbolico de framework pra framework2  
-`cat arquivo` = exibe o conteudo de uma arquivo  
-`top` = tempo real de tudo que está acontecendo na máquina  
-`whoami` = mostra o usuário logado  
-d=diretorio , a = arquivo, s=socket  
+`cat arquivo` = Exibe o conteúdo de um arquivo  
+`cd` = Mudar de diretório  
+`chmod` = Mudar proteção de um arquivo  
+`chown` =  Mudar o DONO e o GRUPO dono de um arquivo ou diretório  
+`cp` = Copia arquivos  
+`file` = Mostra o tipo de um arquivo  
+`find . -name arquivo` = Buscar um arquivo  
+`find . -name "oi*"` = Buscar um arquivo  
+`ln` =  Cria um link entre diretórios e arquivos  
+`ln -s framework framework2` = Cria um link simbólico de framework pra framework2  
+`ls` = Listar arquivos  
+`ls -l` = Ver tipos de arquivo  
+`ls -la` = Lista todos os arquivos, até ocultos  
+`ls -la | grep oi` = Busca arquivos com um filtro  
+`mkdir` =  Criar diretório    
+`mv` = Move arquivos  
+`mv arquivo nomenovo` = Renomear arquivo  
+`pwd` = Exibe o diretório  
+`rm` = Remover arquivo  
+`rm arquivo`  = Remove um único arquivo  
+`rm -rf diretorio` = Remover um diretorio  
+`rm -rf *` = Remove tudo dentro de um contexto  
+`rmdir` = Remove um diretório vazio  
+`sudo chown euller diretorio`= Muda o dono do arquivo  
+`tar` = Armazena ou extrair arquivos .tar  
+`top` = Tempo real de tudo que está acontecendo na máquina  
+`touch` = Criar arquivo vazio  
+`touch .qualquernome` = Criação de arquivo oculto  
+`whoami` = Mostra o usuário logado  
+
+d = diretorio , a = arquivo, s = socket  
 
 ### Permissões de Arquivo
 

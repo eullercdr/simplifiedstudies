@@ -10,6 +10,6 @@ dd = apagar a linha
 uu = voltar as modificações  
 shift + dolar = final da linha  
 yy + p = duplicar a linha  
-:wq = salva e sai ou :x
+:wq = salva e sai ou :x  
 :w apenas salva  
 :q! = sair sem salvar  

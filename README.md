@@ -30,14 +30,9 @@ Staged: Arquivos modificados marcados para consolidação
 
 ## Verificando todos os hashs de commit 
 `git log`  
-
-Verificando todos os commits e alterações
-`git log -p`   
-
-## Verificando as estaticas das mudanças
-`git log -stat`    
 `git log oneline`    
-`git log --pretty=format:"%h - %an, %ar : %s"` (%h hash, %an usuário, %ar tempo, %s descrição do commit)    
+`git log -stat`    
+`git log --pretty=format:"%h - %an, %ar : %s"` (%h hash, %an usuário, %ar tempo, %s descrição do commit)      
 
 ## Commits a x days atras
 `git log --since=2.days`  

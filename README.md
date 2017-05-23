@@ -56,6 +56,7 @@ enfrentam e pode ser resolvido pelos comandos abaixo
 `git commit -a -m "Remove ignored files"`    
 
 ## Voltando o arquivo para versão anterior untracked files
+`git checkout .` Volta a ultima alteração do arquivo     
 git reset HEAD nome ou caminho do arquivo
 
 ## Fluxo de Commits

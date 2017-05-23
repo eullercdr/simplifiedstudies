@@ -49,7 +49,8 @@ o git faz controle de seus proprios arquivos
 
 ## Voltando o arquivo para versão anteriores
 `git checkout .` Volta a ultima alteração do arquivo       
-`git reset HEAD nome ou caminho do arquivo` volta o arquivo para modified  
+`git reset HEAD nome ou caminho do arquivo` volta para o arquivo anterior antes do ultomo commit  
+`git reset HEAD~1` volta para dois commits atras  
 `git reset HEAD~1 --soft` Exclui o ultimo commit e volta o arquivo para ser novamente comitado        
 `git reset HEAD~1 --hard` Exclui o commit, os arquivos e as suas alterações        
 

@@ -36,7 +36,7 @@ Verificando todos os commits e alterações
 
 ## Verificando as estaticas das mudanças
 `git log -stat`    
-`git log --pretty=oneline`    
+`git log oneline`    
 `git log --pretty=format:"%h - %an, %ar : %s"` (%h hash, %an usuário, %ar tempo, %s descrição do commit)    
 
 ## Commits a x days atras
@@ -53,6 +53,9 @@ o git faz controle de seus proprios arquivos
 `git reset HEAD~1` volta para dois commits atras  
 `git reset HEAD~1 --soft` Exclui o ultimo commit e volta o arquivo para ser novamente comitado        
 `git reset HEAD~1 --hard` Exclui o commit, os arquivos e as suas alterações        
+
+## Fazer o merge de um unico commit em outra branch
+`git cherry-pich hash do commit`  
 
 ## Branchs
 Criar um novo Branch `git branch nomedobranch`  

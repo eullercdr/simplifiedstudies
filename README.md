@@ -21,6 +21,12 @@ ou
 `git commit --ammend` (Alterar mensagens e arquivos do ultimo commit)  
 `git commit --ammend arquivo` Adicionar arquivo ao ultimo commit  
 
+## Estados dos Arquivos
+Commited: Arquivos consolidados  
+Modified: Arquivos Modificados
+Unmodified: Arquivos que não sorefram alteração  
+Staged: Arquivos modificados marcados para consolidação  
+
 ## Verificando todos os hashs de commit 
 `git log`  
 

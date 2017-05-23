@@ -15,7 +15,11 @@ Navegar até a pasta do projeto e digitar o seguinte comando `git init`
 `git add .`      
 `git commit -m "Mensagem`    
 ou   
-`git commit -a -m "Descrição Commit"`    
+`git commit -a -m "Descrição Commit"`
+
+## Alterando conteudo e mensagens do commit
+`git commit --ammend` (Alterar mensagens e arquivos do ultimo commit)
+`git commit --ammend arquivo` Adicionar arquivo ao ultimo commit
 
 ## Verificando todos os hashs de commit 
 `git log`  

@@ -12,5 +12,5 @@ shift + dolar = final da linha
 yy + p = duplicar a linha  
 :wq = salva e sai ou :x  
 :w apenas salva  
-:q! = sair sem salvar
+:q! = sair sem salvar  
 :%d = deleta todo conteudo do arquivo

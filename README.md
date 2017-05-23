@@ -23,7 +23,7 @@ ou
 
 ## Estados dos Arquivos
 Commited: Arquivos consolidados  
-Modified: Arquivos Modificados
+Modified: Arquivos Modificados  
 Unmodified: Arquivos que não sorefram alteração    
 Staged: Arquivos modificados marcados para consolidação  
 

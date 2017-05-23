@@ -47,22 +47,12 @@ Verificando todos os commits e alterações
 edite o arquivo, colocando em cada linha a pasta ou arquivo a ser ignorado, o arquivo .gitignore deve ser commitado, pois 
 o git faz controle de seus proprios arquivos  
 
-## Resolvendo problemas de .gitignore
-Você deve usar o comando abaixo quando após commitar o .gitignore, o mesmo não surtir efeito, este é um problema que alguns usuários
-enfrentam e pode ser resolvido pelos comandos abaixo
-
-`git rm -r --cached`     
-`git add .`    
-`git commit -a -m "Remove ignored files"`    
-
-## Voltando o arquivo para versão anterior untracked files
-`git checkout .` Volta a ultima alteração do arquivo     
-git reset HEAD nome ou caminho do arquivo
-
-## Fluxo de Commits
-`git checkout hash` (hash do commit)      
-`git reset HEAD~1 --soft` Exclui o ultimo commit e volta o arquivo para ser novamente comitado      
-`git reset HEAD~1 --hard` Exclui o commit, os arquivos e as suas alterações      
+## Voltando o arquivo para versão anteriores
+`git checkout .` Volta a ultima alteração do arquivo       
+`git reset HEAD nome ou caminho do arquivo` volta o arquivo para modified  
+`git checkout hash` (hash do commit)        
+`git reset HEAD~1 --soft` Exclui o ultimo commit e volta o arquivo para ser novamente comitado        
+`git reset HEAD~1 --hard` Exclui o commit, os arquivos e as suas alterações        
 
 ## Branchs
 Criar um novo Branch `git branch nomedobranch`  

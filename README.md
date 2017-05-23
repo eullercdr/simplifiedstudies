@@ -16,7 +16,7 @@ Navegar até a pasta do projeto e digitar o seguinte comando `git init`
 `git add arquivo` Adiciona apenas um unico arquivo para ser commitado  
 `git commit -m "Mensagem`    
 ou   
-`git commit -a -m "Descrição Commit"`
+`git commit -a -m "Descrição Commit"` Adiciona e commita os modificados, atenção: este comando não adiciona os novos arquivos sendo necessário adiciona-los usando o commando `git add .`  
 
 ## Alterando conteudo e mensagens do commit
 `git commit --ammend` (Alterar mensagens e arquivos do ultimo commit)  

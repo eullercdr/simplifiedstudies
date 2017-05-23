@@ -12,7 +12,8 @@
 Navegar até a pasta do projeto e digitar o seguinte comando `git init`      
 
 ## Adicionando Arquivos e Commitando 
-`git add .`      
+`git add .` Adiciona todos os arquivos 
+`git add arquivo` Adiciona apenas um unico arquivo para ser commitado  
 `git commit -m "Mensagem`    
 ou   
 `git commit -a -m "Descrição Commit"`

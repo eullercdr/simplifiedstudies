@@ -50,7 +50,7 @@ o git faz controle de seus proprios arquivos
 `git reset HEAD~1 --hard` Exclui o commit, os arquivos e as suas alterações        
 
 ## Fazer o merge de um unico commit em outra branch
-`git cherry-pich hash do commit`  
+`git cherry-pick hash do commit`  
 
 ## Branchs
 Criar um novo Branch `git branch nomedobranch`  

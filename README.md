@@ -24,7 +24,7 @@ ou
 ## Estados dos Arquivos
 Commited: Arquivos consolidados  
 Modified: Arquivos Modificados
-Unmodified: Arquivos que não sorefram alteração  
+Unmodified: Arquivos que não sorefram alteração    
 Staged: Arquivos modificados marcados para consolidação  
 
 ## Verificando todos os hashs de commit 

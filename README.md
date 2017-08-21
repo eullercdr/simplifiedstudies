@@ -4,6 +4,7 @@ Estudos simplificados sobre diversas tecnologias. Os arquivos de consulta, serã
 # Branchs
 - <a href="https://github.com/eullercdr/simplifiedstudies/blob/dicaslaravel/README.md">Dicas Laravel</a>
 - <a href="https://github.com/eullercdr/simplifiedstudies/blob/linux/README.md">Linux</a>
+- <a href="https://github.com/eullercdr/simplifiedstudies/blob/vagrat/README.md">VAGRANT</a>
 - <a href="https://github.com/eullercdr/simplifiedstudies/blob/vim/README.md">VIM</a>
 - <a href="https://github.com/eullercdr/simplifiedstudies/blob/git/README.md">GIT</a>
 

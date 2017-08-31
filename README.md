@@ -9,7 +9,7 @@
 
 ### Configurando multiplos servidores - Vagrant File
 
-`Vagrant.configure("2") do |config|
+Vagrant.configure("2") do |config|
 
   config.vm.box = "ubuntu/trusty64"
 

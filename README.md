@@ -106,3 +106,9 @@ para a pasta onde o site vai rodar, no ambiente de produção:
 Agora é só voltar para a sua máquina e adicionar o repositório remoto:  
 `git remote add web ssh://meusite.com.br/home/site/website.git`    
 `git push web master`    
+
+## Cache Clear
+`git rm -r --cached .` 
+`git add .` 
+`git commit -am 'git cache cleared` 
+`git push` 

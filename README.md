@@ -29,3 +29,7 @@ public function boot()
 {  
     Schema::defaultStringLength(191);  
 }   
+
+### Front end Presets Laravel 5.5  
+
+https://laravel-news.com/frontend-presets 

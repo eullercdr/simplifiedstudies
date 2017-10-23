@@ -1,13 +1,29 @@
-# Estudos Simplificados
-Estudos simplificados sobre diversas tecnologias. Os arquivos de consulta, serão separados em branchs, para facilitar consultas posteriores.
+# Docker
 
-# Branchs
-- <a href="https://github.com/eullercdr/simplifiedstudies/blob/dicaslaravel/README.md">Dicas Laravel</a>
-- <a href="https://github.com/eullercdr/simplifiedstudies/blob/linux/README.md">Linux</a>
-- <a href="https://github.com/eullercdr/simplifiedstudies/blob/vagrant/README.md">VAGRANT</a>
-- <a href="#">DOCKER</a>
-- <a href="https://github.com/eullercdr/simplifiedstudies/blob/vim/README.md">VIM</a>
-- <a href="https://github.com/eullercdr/simplifiedstudies/blob/git/README.md">GIT</a>
+## Comandos úteis
+Em algumas situações, o Docker pode conter processos que oca
 
-# Colaboração
-Toda colaboração é bem vinda, sempre temos algo a aprender e a compartilhar! PRs serão muito bem vindo!
+
+Parar todos os containers:
+```
+docker kill $(docker ps -q)
+```
+Remover todos os containers
+```
+docker rm $(docker ps -a -q)
+```
+
+Remover todas as docker images
+```
+docker rmi $(docker images -q)
+```
+
+## Cuidados
+
+Nunca se esqueça de desativar os logs dos containers Docker em produção. Você não vai querer ter todas as suas instâncias de armazenamento ocupadas com arquivos de logs dantescos. Para desativar os logs, basta adicionar as seguintes linhas no seu docker-compose.yml:
+```
+logging:
+    driver: none
+```
+
+

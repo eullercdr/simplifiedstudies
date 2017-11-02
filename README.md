@@ -163,3 +163,5 @@ Reinicie PHP 7.0 FPM
 ```
 sudo service php7.0-fpm restart
 ```
+### Criação Link Simbolico Hostgator
+```ln -fs ./laravel/public ./public_html```

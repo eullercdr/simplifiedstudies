@@ -14,7 +14,8 @@ sudo su curl -L https://github.com/docker/compose/releases/download/1.18.0/docke
 sudo chmod +x /usr/local/bin/docker-compose    
 docker-compose --version    
 
-
+## Criando um container e expondo a porta do vm
+docker run -d -p 8080:80 --name name nginx
 
 
 

@@ -17,5 +17,9 @@ docker-compose --version
 ## Criando um container e expondo a porta do vm
 docker run -d -p 8080:80 --name name nginx
 
+## Rodando comandos dentro do container
+docker exec webserver uname -a    
+docker exec -it webserver bash  
+
 
 

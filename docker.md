@@ -24,3 +24,7 @@ docker exec -it webserver bash
 ## Criando um volume apontando para dados locais
 docker run --name webserver2 -p 8081:80 -v /d/projeto/html:/usr/share/nginx/html nginx
 
+## Removendo containers
+docker rm webserver2 -f
+
+

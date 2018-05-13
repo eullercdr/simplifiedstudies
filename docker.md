@@ -27,5 +27,6 @@ docker run --name webserver2 -p 8081:80 -v /d/projeto/html:/usr/share/nginx/html
 ## Removendo containers
 docker stop $(docker ps -a -q) (para todos os containers ativos)    
 docker rm webserver2 -f (para e remove o container)    
-
+docker stop $(docker ps -a -q) (parar todos os containers)  
+docker rm $(docker ps -a -q) (remover todos os containers)  
 

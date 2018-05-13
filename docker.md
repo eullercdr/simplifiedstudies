@@ -25,6 +25,7 @@ docker exec -it webserver bash
 docker run --name webserver2 -p 8081:80 -v /d/projeto/html:/usr/share/nginx/html nginx
 
 ## Removendo containers
-docker rm webserver2 -f
+docker stop $(docker ps -a -q) (para todos os containers ativos)    
+docker rm webserver2 -f (para e remove o container)    
 
 

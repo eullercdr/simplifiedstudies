@@ -11,6 +11,8 @@ docker run -d -P --name [nome] imagedocker (Atribuir um nome ao container e atre
 docker run -d -p portlocal:portacontainer --name [nome] imagedocker   
 docker run -d -P -e AUTHOR="BLABLA" imagedocker (Seta uma variavel de ambiente no docker)      
 docker port id-container (Lista as portas utilizadas pelo container)  
+docker ps -q (Retorna o hash dos containers)  
+docker stop -t 0 $(docker ps -q) (Para todos os containers)    
 
 ## Rodando comandos dentro do container  
 docker run -it webserver  

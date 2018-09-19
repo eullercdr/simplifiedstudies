@@ -14,6 +14,9 @@ docker port id-container (Lista as portas utilizadas pelo container)
 docker ps -q (Retorna o hash dos containers)  
 docker stop -t 0 $(docker ps -q) (Para todos os containers)    
 
+## Volumes
+docker run -v "path" image (Criando um volume)  
+
 ## Rodando comandos dentro do container  
 docker run -it webserver  
 

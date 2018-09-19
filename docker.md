@@ -4,7 +4,7 @@ docker ps -a (Verifica containers não ativos)
 docker start id-container (Starta o container)   
 docker stop id-container (Para o container)   
 docker start -a -i id-container (Startar e entrar no modo bash)    
-docker prune (Remove todos os containers inativos)  
+docker container prune (Remove todos os containers inativos)  
 
 ## Rodando comandos dentro do container  
 docker run -it webserver  

@@ -5,6 +5,7 @@ docker start id-container (Starta o container)
 docker stop id-container (Para o container)   
 docker start -a -i id-container (Startar e entrar no modo bash)    
 docker container prune (Remove todos os containers inativos)  
+docker rmi nomeimagem (Remove a imagem do container)  
 
 ## Rodando comandos dentro do container  
 docker run -it webserver  

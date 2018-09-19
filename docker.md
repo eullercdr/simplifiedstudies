@@ -1,9 +1,9 @@
 ## Comandos DOCKER
-docker ps (Verifica cointainers ativos)  
-docker ps -a (Verifica containers não ativos)  
-docker start id-container (Starta o container) 
-docker stop id-container (Para o container) 
-docker start -a -i id-container (Startar e entrar no modo bash)  
+docker ps (Verifica cointainers ativos)    
+docker ps -a (Verifica containers não ativos)    
+docker start id-container (Starta o container)   
+docker stop id-container (Para o container)   
+docker start -a -i id-container (Startar e entrar no modo bash)    
 
 ## Rodando comandos dentro do container  
 docker run -it webserver  

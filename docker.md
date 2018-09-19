@@ -1,13 +1,25 @@
 ## Comandos DOCKER
-docker ps - exibe todos os containers em execução no momento.  
-docker ps -a - exibe todos os containers, independente de estarem em execução ou não.  
-docker run -it NOME_DA_IMAGEM - conecta o terminal que estamos utilizando com o do container.  
-docker start ID_CONTAINER - inicia o container com id em questão.  
-docker stop ID_CONTAINER - interrompe o container com id em questão.  
-docker start -a -i ID_CONTAINER - inicia o container com id em questão e integra os terminais, além de permitir interação entre ambos.  
-docker rm ID_CONTAINER - remove o container com id em questão.  
-docker container prune - remove todos os containers que estão parados.  
-docker rmi NOME_DA_IMAGEM - remove a imagem passada como parâmetro.  
-docker run -d -P --name NOME dockersamples/static-site - ao executar, dá um nome ao container.  
-docker run -d -p 12345:80 dockersamples/static-site - define uma porta específica para ser atribuída à porta 80 do container, neste caso 12345.  
-docker run -d -e AUTHOR="Fulano" dockersamples/static-site - define uma variável de ambiente AUTHOR com o valor Fulano no container criado.  
+docker ps (Verifica cointainers ativos)    
+docker ps -a (Verifica containers não ativos)    
+docker start id-container (Starta o container)   
+docker stop id-container (Para o container)   
+docker start -a -i id-container (Startar e entrar no modo bash)    
+docker container prune (Remove todos os containers inativos)  
+docker rmi nomeimagem (Remove a imagem do container)  
+docker run -d -P nomeimagem (Atrela as portas do container as portas do computador local)  
+docker run -d -P --name [nome] imagedocker (Atribuir um nome ao container e atrelar as portas)    
+docker run -d -p portlocal:portacontainer --name [nome] imagedocker   
+docker run -d -P -e AUTHOR="BLABLA" imagedocker (Seta uma variavel de ambiente no docker)      
+docker port id-container (Lista as portas utilizadas pelo container)  
+docker ps -q (Retorna o hash dos containers)  
+docker stop -t 0 $(docker ps -q) (Para todos os containers)    
+
+## Rodando comandos dentro do container  
+docker run -it webserver  
+
+## Removendo containers
+docker stop $(docker ps -a -q) (para todos os containers ativos)    
+docker rm webserver2 -f (para e remove o container)    
+docker stop $(docker ps -a -q) (parar todos os containers)  
+docker rm $(docker ps -a -q) (remover todos os containers)  
+

@@ -15,7 +15,8 @@ docker ps -q (Retorna o hash dos containers)
 docker stop -t 0 $(docker ps -q) (Para todos os containers)    
 
 ## Volumes
-docker run -v "path" image (Criando um volume)  
+docker run -v "pathlocal:pathcontainer" image (Criando um volume)  
+docker run -v -p portalocal:portacontainer "pathlocal:pathcontainer" image (Criando um volume)    
 
 ## Rodando comandos dentro do container  
 docker run -it webserver  

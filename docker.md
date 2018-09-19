@@ -8,6 +8,7 @@ docker container prune (Remove todos os containers inativos)
 docker rmi nomeimagem (Remove a imagem do container)  
 docker run -d -P nomeimagem (Atrela as portas do container as portas do computador local)  
 docker run -d -P --name [nome] imagedocker (Atribuir um nome ao container e atrelar as portas)    
+docker run -d -p portlocal:portacontainer --name [nome] imagedocker     
 docker port id-container (Lista as portas utilizadas pelo container)  
 
 ## Rodando comandos dentro do container  

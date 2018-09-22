@@ -16,6 +16,7 @@ docker stop -t 0 $(docker ps -q) (Para todos os containers)
 
 ## Volumes
 docker run -v "pathlocal:pathcontainer" image (Criando um volume)  
-docker run -v -p portalocal:portacontainer "pathlocal:pathcontainer" image (Criando um volume)    
+docker run -v -p portalocal:portacontainer "pathlocal:pathcontainer" image (Criando um volume) 
+docker inspect id-container (mostra as informações do container)  
 
 

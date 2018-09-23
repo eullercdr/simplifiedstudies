@@ -22,4 +22,6 @@ docker inspect id-container (mostra as informações do container)
 ## Docker File
 docker build -f Dockerfile -t eullercristian/node . (Buildando através de docker file)  
 
-
+## Docker Hub
+docker push eullercristian/node (subindo a imagem)    
+docker pull eullercristian/node (baixando a imagem)  

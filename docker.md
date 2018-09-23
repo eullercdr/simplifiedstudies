@@ -25,3 +25,6 @@ docker build -f Dockerfile -t eullercristian/node . (Buildando através de docke
 ## Docker Hub
 docker push eullercristian/node (subindo a imagem)    
 docker pull eullercristian/node (baixando a imagem)  
+
+## Criando redes
+ docker network create --driver bridge minha-rede (criando uma rede no docker)

@@ -19,4 +19,7 @@ docker run -v "pathlocal:pathcontainer" image (Criando um volume)
 docker run -v -p portalocal:portacontainer "pathlocal:pathcontainer" image (Criando um volume) 
 docker inspect id-container (mostra as informações do container)  
 
+## Docker File
+docker build -f Dockerfile -t eullercristian/node . (Buildando através de docker file)  
+
 

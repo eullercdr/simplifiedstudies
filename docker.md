@@ -30,3 +30,4 @@ docker pull eullercristian/node (baixando a imagem)
  docker network create --driver bridge minha-rede (criando uma rede no docker)  
  docker run -it --name ubuntu1 --network minha-rede ubuntu2 (colocando o container criado na rede)  
  docker network inspect minha-rede (inspecionando os containers conectados a rede) 
+ docker run -it --name NOME_CONTAINER --network NOME_DA_REDE NOME_IMAGEM  

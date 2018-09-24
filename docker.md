@@ -31,3 +31,7 @@ docker pull eullercristian/node (baixando a imagem)
  docker run -it --name ubuntu1 --network minha-rede ubuntu2 (colocando o container criado na rede)  
  docker network inspect minha-rede (inspecionando os containers conectados a rede) 
  docker run -it --name NOME_CONTAINER --network NOME_DA_REDE NOME_IMAGEM  
+ 
+ ## Docker compose
+  docker-compose build (Builda as imagens)  
+  docker-compose up (Levanta as imagens)  

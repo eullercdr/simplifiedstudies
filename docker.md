@@ -29,3 +29,4 @@ docker pull eullercristian/node (baixando a imagem)
 ## Criando redes
  docker network create --driver bridge minha-rede (criando uma rede no docker)  
  docker run -it --name ubuntu1 --network minha-rede ubuntu2 (colocando o container criado na rede)  
+ docker network inspect minha-rede (inspecionando os containers conectados a rede) 

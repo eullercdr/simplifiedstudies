@@ -5,3 +5,4 @@ get "key"
 delete "key"
 keys * (retorna todas as chaves)
 "key:id:id:id" value (organizando chaves)  
+mset "key" value "key" value (Armazenando multiplos valores)  

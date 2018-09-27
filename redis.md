@@ -4,3 +4,4 @@ set "key" value
 get "key"  
 delete "key"
 keys * (retorna todas as chaves)
+"key:key:key" value (organizando chaves)  

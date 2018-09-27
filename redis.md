@@ -6,3 +6,4 @@ delete "key"
 keys * (retorna todas as chaves)
 "key:id:id:id" value (organizando chaves)  
 mset "key" value "key" value (Armazenando multiplos valores)  
+keys "resultado*" (retorna todas os indices que contenham resultados)  

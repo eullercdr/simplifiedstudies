@@ -39,3 +39,4 @@ docker pull eullercristian/node (baixando a imagem)
   ## Limpeza Docker
    docker rm -v $(docker ps -a -q -f status=exited) (Apagando containers que ja morreram)  
    docker rmi $(docker images -f dangling=true -q) (Apagando imagens soltas)  
+   docker rmi $(docker images -q) (deletando todas as imagens)  

@@ -11,3 +11,7 @@ location ^~ /contato { return 200 "hello nginx location block"; } (tratando com 
 ##Logs
 error_log /var/log/nginx/downloads_error.log debug;  
 error_log off; (desligando o log para determinado bloco)  
+access_log off; (desligando o log de acesso)    
+
+##Contextos
+http, server, location

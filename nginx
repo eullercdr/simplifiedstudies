@@ -7,3 +7,7 @@ location = /contato { return 200 "hello nginx location block"; } (aceita apenas 
 location /contato { return 200 "hello nginx location block"; } (aceita /contato /contato123 /contato/teste)
 location ~ /contato[0-9] { return 200 "hello nginx location block"; } (tratando com regex)    
 location ^~ /contato { return 200 "hello nginx location block"; } (tratando com regex)  
+
+##Logs
+error_log /var/log/nginx/downloads_error.log debug;  
+error_log off; (desligando o log para determinado bloco)  

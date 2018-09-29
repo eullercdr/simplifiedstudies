@@ -1,3 +1,8 @@
 
 ##Comandos 
 curl -I http://localhost/site/site.css (Verificando mime types)    
+
+## Nginx.conf
+location = /contato { return 200 "hello nginx location block"; } (aceita apenas /contato)  
+location /contato { return 200 "hello nginx location block"; } (aceita /contato /contato123 /contato/teste)
+location ~ /contato[0-9] { return 200 "hello nginx location block"; } (tratando com regex)    

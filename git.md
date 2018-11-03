@@ -1,4 +1,4 @@
-
+## COMANDOS BASICOS ##
 git init (Inicia um repositorio)    
 git add . (Adiciona arquivos)  
 git add arquivo1 arquivo 2  

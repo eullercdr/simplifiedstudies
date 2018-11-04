@@ -10,5 +10,6 @@ git whatchanged -p ( visualizar quais as linhas que foram modificadas em cada co
 git branch nome (cria uma nova branch)  
 git checkout -b nome (cria uma nova branch e realiza o checkout)  
 git checkout -d nome (remove a branch)  
+git rebase branch-base branch-target (Atualiza uma branch com base em outra)
 
 

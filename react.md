@@ -13,3 +13,5 @@ insert_final_newline = true
 ## Configurações ESLINT
 yarn add eslint -D  
 yarn eslint --init  
+yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D  
+

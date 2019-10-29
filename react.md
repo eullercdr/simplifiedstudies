@@ -18,4 +18,6 @@ yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
 ## ROTAS
 yarn add react-router-dom  
 
+## Styled Components
+yarn add styled-components 
 
